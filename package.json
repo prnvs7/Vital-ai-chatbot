@@ -2,5 +2,8 @@
     "private": true,
     "scripts": {
         "dev": "powershell -NoLogo -NoProfile -ExecutionPolicy Bypass -File .\\dev.ps1"
+    },
+    "dependencies": {
+        "react-router-dom": "^6.30.3"
     }
 }
