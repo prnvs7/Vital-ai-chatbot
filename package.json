@@ -1,0 +1,6 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "powershell -NoLogo -NoProfile -ExecutionPolicy Bypass -File .\\dev.ps1"
+    }
+}

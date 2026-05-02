@@ -34,11 +34,11 @@ const DiagnosisCard = ({ diagnosis }) => {
       initial={{ opacity: 0, scale: 0.95, y: 10 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       transition={{ delay: 0.6, duration: 0.4 }}
-      className={`mt-4 p-5 rounded-2xl border bg-gradient-to-br ${bgGradient} backdrop-blur-md`}
+      className={`mt-4 p-4 sm:p-5 rounded-2xl border bg-gradient-to-br ${bgGradient} backdrop-blur-md w-full break-words`}
     >
-      <div className="flex items-center gap-3 mb-4">
-        <Icon className={`w-7 h-7 ${colorScheme}`} />
-        <h3 className={`text-xl font-bold ${colorScheme}`}>Diagnosis: {triage_level}</h3>
+      <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+        <Icon className={`w-6 h-6 sm:w-7 sm:h-7 ${colorScheme}`} />
+        <h3 className={`text-lg sm:text-xl font-bold ${colorScheme}`}>Diagnosis: {triage_level}</h3>
       </div>
       
       <div className="space-y-4 text-white/90">

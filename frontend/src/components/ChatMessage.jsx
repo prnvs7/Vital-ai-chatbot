@@ -15,7 +15,7 @@ const ChatMessage = ({ message }) => {
       transition={{ duration: 0.3 }}
       className={`flex w-full ${isBot ? 'justify-start md:pr-16' : 'justify-end md:pl-16'}`}
     >
-      <div className={`flex gap-2 sm:gap-3 max-w-[95%] md:max-w-[80%] xl:max-w-[1200px] ${isBot ? 'flex-row' : 'flex-row-reverse'}`}>
+      <div className={`flex gap-2 sm:gap-3 max-w-[95%] md:max-w-[80%] ${isBot ? 'flex-row' : 'flex-row-reverse'}`}>
         
         {/* Avatar */}
         <div className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center shadow-lg ${
@@ -25,9 +25,9 @@ const ChatMessage = ({ message }) => {
         </div>
         
         {/* Message Bubble container */}
-        <div className="flex flex-col min-w-0">
+        <div className="flex flex-col min-w-0 max-w-full">
           <div className={`
-            px-5 py-4 text-[15px] leading-relaxed
+            px-4 py-3 sm:px-5 sm:py-4 text-sm sm:text-[15px] leading-relaxed break-words whitespace-pre-wrap
             ${isBot 
               ? 'glass-panel text-white rounded-2xl rounded-tl-sm' 
               : 'bg-gradient-to-r from-purple-500/80 to-pink-600/80 text-white rounded-2xl rounded-tr-sm shadow-xl backdrop-blur-sm'
